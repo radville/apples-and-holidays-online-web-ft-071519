@@ -38,6 +38,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_hash.each do |holiday, supplies|
       holiday.to_s.split.each do |word|
         word.capitalize!
+        holiday = word.join(" ")
       end
       
       binding.pry
