@@ -40,9 +40,11 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
+  array = []
   holiday_hash.each do |season, season_hash|
     season_hash.each do |season, supplies_array|
-      supplies_array.find_all { |supply| supply == "BBQ" }
+      array << array supplies_array.find_all { |supply| supply == "BBQ" }
     end
   end
+  array
 end
