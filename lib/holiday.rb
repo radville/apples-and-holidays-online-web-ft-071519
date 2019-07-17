@@ -43,6 +43,7 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.each do |season, season_hash|
     season_hash.each do |season, supplies_array|
+      binding.pry
       # array << supplies_array.find_all { |supply| supply == "BBQ" }
     end
   end
